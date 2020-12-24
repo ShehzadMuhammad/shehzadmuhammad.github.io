@@ -1,0 +1,199 @@
+//ABOUT SECTION
+.about {
+    height: 60vh;
+    grid-column: full-start / full-end;
+    display: grid;
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+        padding-left: 5rem;
+        padding-right: 5rem;
+        grid-row-gap: 5rem;
+        margin-top: 2rem;
+        margin-bottom: 8rem;
+    }
+
+    &__pic {
+
+        justify-self: center;
+
+        &--1 {
+            height: 40rem;
+  
+        }
+
+    }
+
+    &__text {
+        margin: auto;
+        font-size: 2.2rem;
+    }
+
+    &__links {
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+
+        &-img {
+            height: 4rem;
+            border-radius: 50%;
+            margin-top: 2rem;
+            margin-right: 2rem;
+        }
+    }
+}
+
+//WORK SECTION 
+.work {
+    height: 60vh;
+    grid-column: full-start / full-end;
+    background-color: yellow;
+    display: grid;
+
+}
+
+//PROJECTS SECTION
+
+.projects {
+    height: 60vh;
+
+    grid-column: full-start / full-end;
+    background-image: linear-gradient(to right, 
+    rgba($colour-primary-light, 1), 
+    rgba($colour-primary-dark, 1));
+    display: grid;
+
+
+    &__list {
+        display: grid;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+        grid-gap: 1.5rem;
+        padding: 1.5rem;
+        padding: 1.5rem;
+        text-align: center;
+        font-size: 3rem;
+
+
+        &--1 {
+            padding: 2rem;
+            background-color: $colour-secondary-1;
+
+            &,
+            &:link,
+            &:visited {
+                text-decoration: none;
+                transition: all .2s;
+                position: relative;
+                
+                //change for the <button> element
+                border: none;
+                cursor:pointer;
+            }
+
+            &:hover {
+                background-color: $colour-primary-light;
+                color: $colour-secondary-2;
+            }
+    
+        }
+
+        &--2 {
+            padding: 2rem;
+            background-color: $colour-secondary-1;
+
+            &,
+            &:link,
+            &:visited {
+                text-decoration: none;
+                transition: all .2s;
+                position: relative;
+                
+                //change for the <button> element
+                border: none;
+                cursor:pointer;
+            }
+
+            &:hover {
+                background-color: $colour-primary-light;
+                color: $colour-secondary-2;
+            }
+
+        }
+        &--3 {
+            padding: 2rem;
+            background-color: $colour-secondary-1;
+
+            &,
+            &:link,
+            &:visited {
+                transition: all .2s;
+                text-decoration: none;
+                position: relative;
+                
+                //change for the <button> element
+                border: none;
+                cursor:pointer;
+            }
+
+            &:hover {
+                background-color: $colour-primary-light;
+                color: $colour-secondary-2;
+            }
+            
+        }
+        &--4 {
+            padding: 2rem;
+            background-color: $colour-secondary-1;
+
+            &,
+            &:link,
+            &:visited {
+                text-decoration: none;
+                transition: all .2s;
+                position: relative;
+                
+                //change for the <button> element
+                border: none;
+                cursor:pointer;
+            }
+
+            &:hover {
+                background-color: $colour-primary-light;
+                color: $colour-secondary-2;
+            }
+            
+        }
+        &--5 {
+            padding: 2rem;
+            background-color: $colour-secondary-1;
+
+            &,
+            &:link,
+            &:visited {
+                text-decoration: none;
+                transition: all .2s;
+                position: relative;
+                
+                //change for the <button> element
+                border: none;
+                cursor:pointer;
+            }
+
+            &:hover {
+                background-color: $colour-primary-light;
+                color: $colour-secondary-2;
+            }
+            
+        }
+    }
+
+}
+
+.footer {
+    background-color: gold;
+}

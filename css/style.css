@@ -1,0 +1,244 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.heading-primary {
+  display: block;
+  color: #f7f7f7;
+  text-transform: uppercase;
+  font-size: 8rem;
+  margin: auto; }
+
+.heading-secondary-1 {
+  display: block;
+  color: #407aed;
+  font-size: 4rem;
+  margin: auto; }
+
+.heading-secondary-2 {
+  display: block;
+  color: #f7f7f7;
+  font-size: 4rem;
+  margin: auto; }
+
+.heading-secondary-3 {
+  color: #0b2b6b;
+  font-size: 3rem; }
+
+.projectcard {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(11, 43, 107, 0.8);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s; }
+  @supports (-webkit-backdrop-filter: blur(5px)) or (backdrop-filter: blur(5px)) {
+    .projectcard {
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px); } }
+  .projectcard__content {
+    width: 75%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f7f7f7;
+    box-shadow: 0 2rem 4rem rgba(11, 43, 107, 0.2);
+    border-radius: .3rem;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all .8s .2s;
+    display: grid; }
+  .projectcard__heading {
+    text-align: center;
+    font-size: 5rem; }
+  .projectcard__img {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    padding: 3rem; }
+    .projectcard__img--item {
+      width: 100%; }
+    .projectcard__img--solo {
+      width: 50%;
+      justify-self: center; }
+  .projectcard__text {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    padding: 3rem;
+    font-size: 1.5rem; }
+    .projectcard__text--block {
+      padding: 1rem; }
+  .projectcard__headline {
+    display: inline-block;
+    font-weight: bolder;
+    color: #0b2b6b;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #000; }
+  .projectcard__link {
+    display: inline-block;
+    font-style: italic;
+    margin-top: 1rem; }
+    .projectcard__link--item {
+      text-decoration: none; }
+  .projectcard__repo {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    text-decoration: none; }
+  .projectcard:target {
+    opacity: 1;
+    visibility: visible; }
+  .projectcard:target .projectcard__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
+  .projectcard__close:link, .projectcard__close:visited {
+    color: #407aed;
+    position: absolute;
+    top: 1rem;
+    right: 2.5rem;
+    font-size: 3rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .2s;
+    line-height: 1; }
+  .projectcard__close:hover {
+    color: #0b2b6b; }
+
+.container {
+  display: grid;
+  grid-template-rows: 75vh repeat(3, min-content);
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 20rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+
+.header {
+  background-image: linear-gradient(to right bottom, rgba(64, 122, 237, 0.2), #0b2b6b), url(../img/nightcity.jpg);
+  background-size: 100% 100%;
+  grid-column: full-start / full-end;
+  display: flex;
+  align-items: center; }
+
+.about {
+  height: 60vh;
+  grid-column: full-start / full-end;
+  display: grid; }
+  .about__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    padding-left: 5rem;
+    padding-right: 5rem;
+    grid-row-gap: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 8rem; }
+  .about__pic {
+    justify-self: center; }
+    .about__pic--1 {
+      height: 40rem; }
+  .about__text {
+    margin: auto;
+    font-size: 2.2rem; }
+  .about__links {
+    list-style: none; }
+  .about__item {
+    display: inline-block; }
+    .about__item-img {
+      height: 4rem;
+      border-radius: 50%;
+      margin-top: 2rem;
+      margin-right: 2rem; }
+
+.work {
+  height: 60vh;
+  grid-column: full-start / full-end;
+  background-color: yellow;
+  display: grid; }
+
+.projects {
+  height: 60vh;
+  grid-column: full-start / full-end;
+  background-image: linear-gradient(to right, #407aed, #0b2b6b);
+  display: grid; }
+  .projects__list {
+    display: grid;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-gap: 1.5rem;
+    padding: 1.5rem;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 3rem; }
+    .projects__list--1 {
+      padding: 2rem;
+      background-color: #f7f7f7; }
+      .projects__list--1, .projects__list--1:link, .projects__list--1:visited {
+        text-decoration: none;
+        transition: all .2s;
+        position: relative;
+        border: none;
+        cursor: pointer; }
+      .projects__list--1:hover {
+        background-color: #407aed;
+        color: #eee; }
+    .projects__list--2 {
+      padding: 2rem;
+      background-color: #f7f7f7; }
+      .projects__list--2, .projects__list--2:link, .projects__list--2:visited {
+        text-decoration: none;
+        transition: all .2s;
+        position: relative;
+        border: none;
+        cursor: pointer; }
+      .projects__list--2:hover {
+        background-color: #407aed;
+        color: #eee; }
+    .projects__list--3 {
+      padding: 2rem;
+      background-color: #f7f7f7; }
+      .projects__list--3, .projects__list--3:link, .projects__list--3:visited {
+        transition: all .2s;
+        text-decoration: none;
+        position: relative;
+        border: none;
+        cursor: pointer; }
+      .projects__list--3:hover {
+        background-color: #407aed;
+        color: #eee; }
+    .projects__list--4 {
+      padding: 2rem;
+      background-color: #f7f7f7; }
+      .projects__list--4, .projects__list--4:link, .projects__list--4:visited {
+        text-decoration: none;
+        transition: all .2s;
+        position: relative;
+        border: none;
+        cursor: pointer; }
+      .projects__list--4:hover {
+        background-color: #407aed;
+        color: #eee; }
+    .projects__list--5 {
+      padding: 2rem;
+      background-color: #f7f7f7; }
+      .projects__list--5, .projects__list--5:link, .projects__list--5:visited {
+        text-decoration: none;
+        transition: all .2s;
+        position: relative;
+        border: none;
+        cursor: pointer; }
+      .projects__list--5:hover {
+        background-color: #407aed;
+        color: #eee; }
+
+.footer {
+  background-color: gold; }

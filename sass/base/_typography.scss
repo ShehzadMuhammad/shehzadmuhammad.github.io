@@ -1,0 +1,32 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.heading-primary {
+    display: block;
+    color: $colour-secondary-1;
+    text-transform: uppercase;
+    font-size: 8rem;
+    margin: auto;
+}
+
+.heading-secondary-1 {
+    display: block;
+    color: $colour-primary-light;
+    font-size: 4rem;
+    margin: auto;
+}
+
+.heading-secondary-2 {
+    display: block;
+    color: $colour-secondary-1;
+    font-size: 4rem;
+    margin: auto;
+
+}
+
+.heading-secondary-3 {
+    color: $colour-primary-dark;
+    font-size: 3rem;
+
+}

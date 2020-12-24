@@ -1,0 +1,14 @@
+.header {
+    background-image: linear-gradient(to right bottom, 
+    rgba($colour-primary-light, 0.2), 
+    rgba($colour-primary-dark, 1)),
+url(../img/nightcity.jpg); 
+//background-image: url(../img/nightcity.jpg);
+    background-size: 100% 100%;
+    grid-column: full-start / full-end;
+    display: flex;
+
+    align-items: center;
+
+
+}
