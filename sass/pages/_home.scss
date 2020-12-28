@@ -1,8 +1,16 @@
 //ABOUT SECTION
 .about {
-    height: 60vh;
-    grid-column: full-start / full-end;
-    display: grid;
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+    grid-column: center-start / center-end;
+    
+
+
+    &__heading {
+        text-align: center;
+        margin-bottom: 2rem;
+
+    }
 
     &__content {
         display: grid;
@@ -46,26 +54,24 @@
     }
 }
 
-//WORK SECTION 
-.work {
-    height: 60vh;
-    grid-column: full-start / full-end;
-    background-color: yellow;
-    display: grid;
-
-}
-
 //PROJECTS SECTION
 
 .projects {
-    height: 60vh;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
 
     grid-column: full-start / full-end;
     background-image: linear-gradient(to right, 
     rgba($colour-primary-light, 1), 
     rgba($colour-primary-dark, 1));
     display: grid;
+  
 
+    &__heading {
+        margin-bottom: 5rem;
+        justify-self: center;
+
+    }
 
     &__list {
         display: grid;
