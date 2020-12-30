@@ -69,6 +69,7 @@
     
             &:hover {
                 fill: $colour-primary-light;
+                transform: translateY(-1rem);
             }
         }
 
@@ -156,7 +157,7 @@
         grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
         grid-gap: 1.5rem;
         padding: 1.5rem;
-        padding: 1.5rem;
+
         text-align: center;
         font-size: 3rem;
         justify-content: center;
@@ -168,7 +169,7 @@
         &--logo {
             margin-top: 2rem;
             height: 25rem;
-            width: 100%;
+            width: 80%;
         }
 
         &--1 {
@@ -188,8 +189,9 @@
             }
 
             &:hover {
-                background-color: $colour-primary-light;
+                background-color: $colour-primary-dark;
                 color: $colour-secondary-2;
+                transform: translateY(-1rem);
             }
     
         }
@@ -213,8 +215,9 @@
             }
 
             &:hover {
-                background-color: $colour-primary-light;
+                background-color: $colour-primary-dark;
                 color: $colour-secondary-2;
+                transform: translateY(-1rem);
             }
 
         }
@@ -235,8 +238,9 @@
             }
 
             &:hover {
-                background-color: $colour-primary-light;
+                background-color: $colour-primary-dark;
                 color: $colour-secondary-2;
+                transform: translateY(-1rem);
             }
             
         }
@@ -257,8 +261,9 @@
             }
 
             &:hover {
-                background-color: $colour-primary-light;
+                background-color: $colour-primary-dark;
                 color: $colour-secondary-2;
+                transform: translateY(-1rem);
             }
             
         }
@@ -279,8 +284,9 @@
             }
 
             &:hover {
-                background-color: $colour-primary-light;
+                background-color: $colour-primary-dark;
                 color: $colour-secondary-2;
+                transform: translateY(-1rem);
             }
             
         }

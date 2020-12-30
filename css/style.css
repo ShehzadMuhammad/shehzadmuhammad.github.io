@@ -168,7 +168,8 @@ body {
         border: none;
         cursor: pointer; }
       .about__icon-img:hover {
-        fill: #407aed; }
+        fill: #407aed;
+        transform: translateY(-1rem); }
 
 .work {
   padding-top: 6rem;
@@ -214,7 +215,6 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     grid-gap: 1.5rem;
     padding: 1.5rem;
-    padding: 1.5rem;
     text-align: center;
     font-size: 3rem;
     justify-content: center; }
@@ -223,7 +223,7 @@ body {
     .projects__list--logo {
       margin-top: 2rem;
       height: 25rem;
-      width: 100%; }
+      width: 80%; }
     .projects__list--1 {
       padding: 2rem;
       background-color: #f7f7f7; }
@@ -234,8 +234,9 @@ body {
         border: none;
         cursor: pointer; }
       .projects__list--1:hover {
-        background-color: #407aed;
-        color: #eee; }
+        background-color: #0b2b6b;
+        color: #eee;
+        transform: translateY(-1rem); }
     .projects__list--2 {
       padding: 2rem;
       background-color: #f7f7f7;
@@ -248,8 +249,9 @@ body {
         border: none;
         cursor: pointer; }
       .projects__list--2:hover {
-        background-color: #407aed;
-        color: #eee; }
+        background-color: #0b2b6b;
+        color: #eee;
+        transform: translateY(-1rem); }
     .projects__list--3 {
       padding: 2rem;
       background-color: #f7f7f7; }
@@ -260,8 +262,9 @@ body {
         border: none;
         cursor: pointer; }
       .projects__list--3:hover {
-        background-color: #407aed;
-        color: #eee; }
+        background-color: #0b2b6b;
+        color: #eee;
+        transform: translateY(-1rem); }
     .projects__list--4 {
       padding: 2rem;
       background-color: #f7f7f7; }
@@ -272,8 +275,9 @@ body {
         border: none;
         cursor: pointer; }
       .projects__list--4:hover {
-        background-color: #407aed;
-        color: #eee; }
+        background-color: #0b2b6b;
+        color: #eee;
+        transform: translateY(-1rem); }
     .projects__list--5 {
       padding: 2rem;
       background-color: #f7f7f7; }
@@ -284,5 +288,6 @@ body {
         border: none;
         cursor: pointer; }
       .projects__list--5:hover {
-        background-color: #407aed;
-        color: #eee; }
+        background-color: #0b2b6b;
+        color: #eee;
+        transform: translateY(-1rem); }
