@@ -8,7 +8,84 @@
 
     &__heading {
         text-align: center;
-        margin-bottom: 2rem;
+        margin-bottom: 9rem;
+
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+        padding-left: 5rem;
+        padding-right: 5rem;
+        grid-row-gap: 5rem;
+        margin-top: 2rem;
+        margin-bottom: 8rem;
+    }
+
+    &__pic {
+
+        justify-self: center;
+
+        &--1 {
+            height: 40rem;
+  
+        }
+
+    }
+
+    &__text {
+        margin: auto;
+        font-size: 2.2rem;
+    }
+
+    &__links {
+        display: flex;
+
+        justify-content: center;
+    }
+
+    &__icon {
+        display: flex;
+
+
+        &-img {
+            height: 5rem;
+            width: 5rem;
+            margin-top: 2rem ;
+            margin-right: 4rem;
+            fill: $colour-primary-dark;
+
+            &,
+            &:link,
+            &:visited {
+                text-decoration: none;
+                transition: all .2s;
+                position: relative;
+                
+                //change for the <button> element
+                border: none;
+                cursor:pointer;
+            }
+    
+            &:hover {
+                fill: $colour-primary-light;
+            }
+        }
+
+       
+    }
+}
+
+.work {
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+    grid-column: center-start / center-end;
+    
+
+
+    &__heading {
+        text-align: center;
+        margin-bottom: 9rem;
 
     }
 
@@ -40,16 +117,15 @@
 
     &__links {
         list-style: none;
+        margin-top: 2rem;
+
     }
 
     &__item {
-        display: inline-block;
+
 
         &-img {
             height: 4rem;
-            border-radius: 50%;
-            margin-top: 2rem;
-            margin-right: 2rem;
         }
     }
 }
@@ -68,7 +144,7 @@
   
 
     &__heading {
-        margin-bottom: 5rem;
+        margin-bottom: 9rem;
         justify-self: center;
 
     }
@@ -83,7 +159,17 @@
         padding: 1.5rem;
         text-align: center;
         font-size: 3rem;
+        justify-content: center;
 
+        &--content {
+            display: block;
+        }
+
+        &--logo {
+            margin-top: 2rem;
+            height: 25rem;
+            width: 100%;
+        }
 
         &--1 {
             padding: 2rem;
@@ -111,6 +197,8 @@
         &--2 {
             padding: 2rem;
             background-color: $colour-secondary-1;
+            display: flex;
+            justify-content: center;
 
             &,
             &:link,
@@ -198,8 +286,4 @@
         }
     }
 
-}
-
-.footer {
-    background-color: gold;
 }

@@ -17,9 +17,10 @@
 
     <body class="container">
 
-        <header class="header">                         
+        <header class="header" id="home">                         
             <h1 class="heading-primary">Shehzad Muhammad</h1>
         </header>
+
 
         <section class="about">
                 <h2 class="heading-secondary-1 about__heading">About Me</h2>
@@ -32,50 +33,86 @@
                         <p class="about-me">
                         Computer Science graduate with a passion for Front-End Web Development as well as Software Development. I pride myself in my Communication skills and being able to work well with others. I enjoy learning new concepts and increasing my knowledge of Computer Programming.
                         </p>
-                        <ul class="about__links">
-                            <li class="about__item">                    
-                                <img src="img/profile.svg" alt="profile" class="about__item-img">
-                            </li>
-                            <li class="about__item">
-                                <img src="img/linkedin.svg" alt="linkedin" class="about__item-img">
-                            </li>
-                            <li class="about__item"> 
-                              <img src="img/github.svg" alt="github" class="about__item-img">
-                            </li>
-                        </ul>
+                        <div class="about__links">
+                            <svg class="about__icon-img">
+                                <use xlink:href="img/sprite.svg#icon-profile"></use>
+                            </svg>
+                            
+                            <a href="https://www.linkedin.com/in/shehzad-muhammad-55b125b8/" target="_blank">
+                            <svg class="about__icon-img">
+                                <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                            </a>
+
+                            <a href="https://github.com/ShehzadMuhammad" target="_blank">
+                            <svg class="about__icon-img">
+                                <use xlink:href="img/sprite.svg#icon-github"></use>
+                            </svg>
+                            </a>
+                        </div>   
+
                     </div>
+
                 </div>   
-                
-                <div class="about__content">
-                    <div class="about__pic">
-                        <img src="img/xactlycorp.jpg" alt="me" class="about__pic--1">
-                    </div>
-    
-                    <div class="about__text">
-                        <p class="about-me">
-                        Computer Science graduate with a passion for Front-End Web Development as well as Software Development. I pride myself in my Communication skills and being able to work well with others. I enjoy learning new concepts and increasing my knowledge of Computer Programming.
-                        </p>
-                    </div>
-                </div> 
+            
                 
         </section>
+
+        <section class="work">
+            <h2 class="heading-secondary-1 work__heading">Work</h2>
+            <div class="work__content">
+                <div class="work__pic">
+                    <img src="img/xactlycorp.jpg" alt="me" class="work__pic--1">
+                </div>
+
+                <div class="work__text">
+                    <p class="work-me">
+                    Computer Science graduate with a passion for Front-End Web Development as well as Software Development. I pride myself in my Communication skills and being able to work well with others. I enjoy learning new concepts and increasing my knowledge of Computer Programming.
+                    </p>
+                </div>
+            </div> 
+            
+    </section>
 
         <section class="projects">
             <h2 class="heading-secondary-2 projects__heading">Projects</h2>
 
             <div class="projects__list">
 
-                <a href="#projects--weather" class="projects__list--2">Weather</a>
-                <a href="#projects--chat-app" class="projects__list--3">Chat App</a>
-                <a href="#projects--zara" class="projects__list--1">Zara</a>
-                <a href="#projects--forum-site" class="projects__list--4">Forum Site</a>
-                <a href="#projects--old-site" class="projects__list--5">Old Site</a>
+                <a href="#projects--weather" class="projects__list--2">
+                    <div class="projects__list--content">
+                        <h3>Weather</h3>
+                        <img src="img/logo_weather.jpg" alt="logo_weather" class="projects__list--logo">
+                    </div>
+                </a>
+                <a href="#projects--chat-app" class="projects__list--3">
+                    <div class="projects__list--content">
+                        <h3>Chat App</h3>
+                        <img src="img/logo_chat.jpg" alt="logo_chat" class="projects__list--logo">
+                    </div>
+                </a>
+                <a href="#projects--zara" class="projects__list--1">
+                <div class="projects__list--content">
+                    <h3>Zara</h3>
+                    <img src="img/logo_zara.jpg" alt="logo_zara" class="projects__list--logo">
+                </div>
+                </a>
+                <a href="#projects--forum-site" class="projects__list--4">
+                    <div class="projects__list--content">
+                        <h3>Forum Site</h3>
+                        <img src="img/logo_forum.jpg" alt="logo_forum" class="projects__list--logo">
+                    </div>
+                </a>
+                <a href="#projects--old-site" class="projects__list--5">
+                    <div class="projects__list--content">
+                        <h3>Old Site</h3>
+                        <img src="img/logo_oldsite.jpg" alt="logo_oldsite" class="projects__list--logo">
+                    </div>
+                </a>
             </div>
 
             
         </section>
-
-        <footer class="footer">Footer</footer>
 
         <div class="projectcard" id="projects--zara">
                 <div class="projectcard__content">
