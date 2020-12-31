@@ -35,14 +35,15 @@
     &__img {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-        padding: 3rem;
+        grid-gap: 1rem;
+        padding: 1rem;
 
         &--item {
             width: 100%;
         }
 
         &--solo {
-            width: 50%;
+            width: 70%;
             justify-self: center;
         }
 
