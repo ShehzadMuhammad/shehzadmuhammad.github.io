@@ -105,12 +105,33 @@ body {
     font-style: italic;
     margin-top: 1rem; }
     .projectcard__link--item {
-      text-decoration: none; }
+      display: inline-block;
+      text-decoration: none;
+      margin-top: 1rem; }
+      .projectcard__link--item, .projectcard__link--item:link, .projectcard__link--item:visited {
+        text-decoration: none;
+        transition: all .2s;
+        position: relative;
+        border: none;
+        cursor: pointer; }
+      .projectcard__link--item:hover {
+        color: #0b2b6b;
+        transform: translateY(-0.5rem); }
   .projectcard__repo {
-    display: block;
+    display: inline-block;
     text-align: center;
     margin-top: 1rem;
+    margin-left: 40%;
     text-decoration: none; }
+    .projectcard__repo, .projectcard__repo:link, .projectcard__repo:visited {
+      text-decoration: none;
+      transition: all .2s;
+      position: relative;
+      border: none;
+      cursor: pointer; }
+    .projectcard__repo:hover {
+      color: #0b2b6b;
+      transform: translateY(-0.5rem); }
   .projectcard:target {
     opacity: 1;
     visibility: visible; }
