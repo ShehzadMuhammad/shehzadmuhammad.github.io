@@ -210,7 +210,7 @@ body {
   grid-column: center-start / center-end; }
   .about__heading {
     text-align: center;
-    margin-bottom: 9rem; }
+    margin-bottom: 5rem; }
   .about__content--1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
@@ -221,16 +221,32 @@ body {
     margin-bottom: 8rem; }
   .about__content--2 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    grid-gap: 5rem;
-    margin-bottom: 2rem; }
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 3rem;
+    margin-bottom: 1rem;
+    align-content: center; }
   .about__pic {
     justify-self: center; }
     .about__pic--1 {
       height: 40rem; }
+  .about__hobby-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 20rem;
+    margin-bottom: 1rem; }
+    @media only screen and (max-width: 37.5em) {
+      .about__hobby-pic {
+        width: 50%; } }
   .about__text {
+    display: block;
     margin: auto;
     font-size: 2.2rem; }
+    .about__text--2 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 1rem; }
   .about__links {
     display: flex;
     justify-content: center; }
@@ -295,7 +311,7 @@ body {
     margin-left: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     grid-gap: 1.5rem;
-    padding: 1.5rem;
+    padding: 0.5rem;
     text-align: center;
     font-size: 3rem;
     justify-content: center; }
@@ -304,7 +320,10 @@ body {
     .projects__list--logo {
       margin-top: 2rem;
       height: 25rem;
-      width: 80%; }
+      width: 70%; }
+      @media only screen and (max-width: 56.25em) {
+        .projects__list--logo {
+          width: 70%; } }
     .projects__list--1 {
       padding: 2rem;
       background-color: #f7f7f7; }
