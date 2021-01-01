@@ -12,22 +12,38 @@ body {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-duration: ease-out;
+
+    @include respond(phone) {
+        font-size: 6rem;
+    }
 }
 
 .heading-secondary-1 {
     color: $colour-primary-light;
     font-size: 6rem;
+
+    @include respond(phone) {
+        font-size: 4rem;
+    }
 }
 
 .heading-secondary-2 {
     color: $colour-secondary-1;
     font-size: 6rem;
 
+    @include respond(phone) {
+        font-size: 4rem;
+    }
+
 }
 
 .heading-secondary-3 {
     color: $colour-primary-dark;
-    font-size: 3rem;
+    font-size: 3.5rem;
+
+    @include respond(phone) {
+        font-size: 3rem;
+    }
 
 }
 

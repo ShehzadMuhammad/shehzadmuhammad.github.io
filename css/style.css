@@ -56,18 +56,30 @@ body {
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-duration: ease-out; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary {
+      font-size: 6rem; } }
 
 .heading-secondary-1 {
   color: #407aed;
   font-size: 6rem; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-secondary-1 {
+      font-size: 4rem; } }
 
 .heading-secondary-2 {
   color: #f7f7f7;
   font-size: 6rem; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-secondary-2 {
+      font-size: 4rem; } }
 
 .heading-secondary-3 {
   color: #0b2b6b;
-  font-size: 3rem; }
+  font-size: 3.5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-secondary-3 {
+      font-size: 3rem; } }
 
 .text-bold {
   font-weight: 400; }
@@ -199,7 +211,7 @@ body {
   .about__heading {
     text-align: center;
     margin-bottom: 9rem; }
-  .about__content {
+  .about__content--1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
     padding-left: 5rem;
@@ -207,6 +219,11 @@ body {
     grid-row-gap: 5rem;
     margin-top: 2rem;
     margin-bottom: 8rem; }
+  .about__content--2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 5rem;
+    margin-bottom: 2rem; }
   .about__pic {
     justify-self: center; }
     .about__pic--1 {
