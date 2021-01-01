@@ -1,5 +1,5 @@
 .projectcard {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     position: fixed;
     top: 0;
@@ -25,25 +25,33 @@
         transform: translate(-50%, -50%) scale(.25);
         transition: all .8s .2s;
         display: grid;
+
+    
     }
 
     &__heading {
         text-align: center;
         font-size: 5rem;
+
+        @include respond(phone) {
+            font-size: 3rem;
+        }
     }
 
     &__img {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
         grid-gap: 1rem;
         padding: 1rem;
 
         &--item {
             width: 100%;
+
+       
         }
 
         &--solo {
-            width: 70%;
+            width: 80%;
             justify-self: center;
         }
 

@@ -53,39 +53,37 @@ body {
   text-transform: uppercase;
   font-size: 8rem;
   margin: auto;
+  text-align: center;
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-duration: ease-out; }
   @media only screen and (max-width: 37.5em) {
     .heading-primary {
-      font-size: 6rem; } }
+      font-size: 5rem; } }
 
 .heading-secondary-1 {
   color: #407aed;
   font-size: 6rem; }
   @media only screen and (max-width: 37.5em) {
     .heading-secondary-1 {
-      font-size: 4rem; } }
+      font-size: 3rem; } }
 
 .heading-secondary-2 {
   color: #f7f7f7;
   font-size: 6rem; }
   @media only screen and (max-width: 37.5em) {
     .heading-secondary-2 {
-      font-size: 4rem; } }
+      font-size: 3rem; } }
 
 .heading-secondary-3 {
   color: #0b2b6b;
   font-size: 3.5rem; }
   @media only screen and (max-width: 37.5em) {
     .heading-secondary-3 {
-      font-size: 3rem; } }
-
-.text-bold {
-  font-weight: 400; }
+      font-size: 2.5rem; } }
 
 .projectcard {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: fixed;
   top: 0;
@@ -115,15 +113,18 @@ body {
   .projectcard__heading {
     text-align: center;
     font-size: 5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .projectcard__heading {
+        font-size: 3rem; } }
   .projectcard__img {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     grid-gap: 1rem;
     padding: 1rem; }
     .projectcard__img--item {
       width: 100%; }
     .projectcard__img--solo {
-      width: 70%;
+      width: 80%;
       justify-self: center; }
   .projectcard__text {
     display: grid;
@@ -201,8 +202,7 @@ body {
   background-image: linear-gradient(to right, rgba(64, 122, 237, 0.8), rgba(11, 43, 107, 0.8)), url(../img/nightcity.jpg);
   background-size: 100% 100%;
   grid-column: full-start / full-end;
-  display: flex;
-  justify-content: center; }
+  display: flex; }
 
 .about {
   padding-top: 6rem;
@@ -219,6 +219,9 @@ body {
     grid-row-gap: 5rem;
     margin-top: 2rem;
     margin-bottom: 8rem; }
+  @media only screen and (max-width: 37.5em) {
+    .about-me {
+      font-size: 2rem; } }
   .about__content--2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -247,6 +250,9 @@ body {
       text-align: center;
       font-size: 2.2rem;
       margin-bottom: 1rem; }
+      @media only screen and (max-width: 37.5em) {
+        .about__text--2 {
+          font-size: 2rem; } }
   .about__links {
     display: flex;
     justify-content: center; }
@@ -283,6 +289,9 @@ body {
     grid-row-gap: 5rem;
     margin-top: 2rem;
     margin-bottom: 8rem; }
+  @media only screen and (max-width: 37.5em) {
+    .work-me {
+      font-size: 2rem; } }
   .work__pic {
     justify-self: center; }
     .work__pic--1 {
@@ -307,23 +316,32 @@ body {
     justify-self: center; }
   .projects__list {
     display: grid;
-    margin-right: 2rem;
-    margin-left: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     grid-gap: 1.5rem;
     padding: 0.5rem;
     text-align: center;
     font-size: 3rem;
     justify-content: center; }
+    @media only screen and (max-width: 37.5em) {
+      .projects__list {
+        font-size: 2rem; } }
     .projects__list--content {
-      display: block; }
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
     .projects__list--logo {
       margin-top: 2rem;
       height: 25rem;
       width: 70%; }
       @media only screen and (max-width: 56.25em) {
         .projects__list--logo {
-          width: 70%; } }
+          width: 70%;
+          margin-top: 1rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .projects__list--logo {
+          width: 50%;
+          padding: 0;
+          margin: 0; } }
     .projects__list--1 {
       padding: 2rem;
       background-color: #f7f7f7; }

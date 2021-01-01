@@ -2,8 +2,7 @@
 .about {
     padding-top: 6rem;
     padding-bottom: 5rem;
-    grid-column: center-start / center-end;
-    
+    grid-column: center-start / center-end;    
 
 
     &__heading {
@@ -20,6 +19,13 @@
         grid-row-gap: 5rem;
         margin-top: 2rem;
         margin-bottom: 8rem;
+    }
+
+
+    &-me {
+        @include respond(phone){
+            font-size: 2rem;
+        }
     }
 
     &__content--2 {
@@ -64,6 +70,10 @@
             text-align: center;
             font-size: 2.2rem;
             margin-bottom: 1rem;
+
+            @include respond(phone) {
+                font-size: 2rem;
+            }
         }
     }
 
@@ -104,6 +114,8 @@
     }
 }
 
+
+//Work Section
 .work {
     padding-top: 6rem;
     padding-bottom: 5rem;
@@ -125,6 +137,12 @@
         grid-row-gap: 5rem;
         margin-top: 2rem;
         margin-bottom: 8rem;
+    }
+
+    &-me {
+        @include respond(phone) {
+            font-size: 2rem;
+        }
     }
 
     &__pic {
@@ -179,8 +197,7 @@
 
     &__list {
         display: grid;
-        margin-right: 2rem;
-        margin-left: 2rem;
+      
         grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
         grid-gap: 1.5rem;
         padding: 0.5rem;
@@ -189,8 +206,17 @@
         font-size: 3rem;
         justify-content: center;
 
+        @include respond(phone)
+        {
+            font-size: 2rem;
+        
+           
+        }
+
         &--content {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         &--logo {
@@ -200,6 +226,13 @@
 
             @include respond(tab-port) {
                 width: 70%;
+                margin-top: 1rem;
+            }
+
+            @include respond(phone){
+                width: 50%;
+                padding: 0;
+                margin: 0;
             }
 
         }
@@ -215,7 +248,7 @@
                 transition: all .2s;
                 position: relative;
                 
-                //change for the <button> element
+                
                 border: none;
                 cursor:pointer;
             }
@@ -225,11 +258,12 @@
                 color: $colour-secondary-2;
                 transform: translateY(-1rem);
             }
+
     
         }
 
         &--2 {
-            padding: 2rem;
+           padding: 2rem;
             background-color: $colour-secondary-1;
             display: flex;
             justify-content: center;
@@ -241,7 +275,7 @@
                 transition: all .2s;
                 position: relative;
                 
-                //change for the <button> element
+             
                 border: none;
                 cursor:pointer;
             }
@@ -251,10 +285,11 @@
                 color: $colour-secondary-2;
                 transform: translateY(-1rem);
             }
+
 
         }
         &--3 {
-            padding: 2rem;
+           padding: 2rem;
             background-color: $colour-secondary-1;
 
             &,
@@ -264,7 +299,7 @@
                 text-decoration: none;
                 position: relative;
                 
-                //change for the <button> element
+                
                 border: none;
                 cursor:pointer;
             }
@@ -274,10 +309,12 @@
                 color: $colour-secondary-2;
                 transform: translateY(-1rem);
             }
+
+      
             
         }
         &--4 {
-            padding: 2rem;
+           padding: 2rem;
             background-color: $colour-secondary-1;
 
             &,
@@ -298,6 +335,8 @@
                 transform: translateY(-1rem);
             }
             
+        
+
         }
         &--5 {
             padding: 2rem;
@@ -310,7 +349,6 @@
                 transition: all .2s;
                 position: relative;
                 
-                //change for the <button> element
                 border: none;
                 cursor:pointer;
             }
@@ -321,6 +359,8 @@
                 transform: translateY(-1rem);
             }
             
+    
+
         }
     }
 
