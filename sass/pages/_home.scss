@@ -199,9 +199,8 @@
         display: grid;
       
         grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-        grid-gap: 1.5rem;
-        padding: 0.5rem;
-
+        grid-gap: 3rem;
+        padding: 2rem;
         text-align: center;
         font-size: 3rem;
         justify-content: center;
