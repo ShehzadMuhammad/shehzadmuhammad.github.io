@@ -140,7 +140,7 @@ body {
       padding: 1rem; }
     @media only screen and (max-width: 37.5em) {
       .projectcard__text {
-        font-size: 0.8rem; } }
+        font-size: 1rem; } }
   .projectcard__headline {
     display: inline-block;
     font-weight: bolder;
