@@ -122,9 +122,14 @@ body {
     grid-gap: 1rem;
     padding: 1rem; }
     .projectcard__img--item {
-      width: 100%; }
+      width: 85%;
+      margin-left: 5rem; }
+      @media only screen and (max-width: 75em) {
+        .projectcard__img--item {
+          width: 100%;
+          margin-left: 0; } }
     .projectcard__img--solo {
-      width: 80%;
+      width: 60%;
       justify-self: center; }
   .projectcard__text {
     display: grid;
@@ -133,6 +138,9 @@ body {
     font-size: 1.5rem; }
     .projectcard__text--block {
       padding: 1rem; }
+    @media only screen and (max-width: 37.5em) {
+      .projectcard__text {
+        font-size: 1rem; } }
   .projectcard__headline {
     display: inline-block;
     font-weight: bolder;
@@ -159,8 +167,8 @@ body {
   .projectcard__repo {
     display: inline-block;
     text-align: center;
+    margin-left: 50%;
     margin-top: 1rem;
-    margin-left: 40%;
     text-decoration: none; }
     .projectcard__repo, .projectcard__repo:link, .projectcard__repo:visited {
       text-decoration: none;
@@ -236,12 +244,12 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 45%;
     height: 20rem;
-    margin-bottom: 1rem; }
+    margin-bottom: 2.5rem; }
     @media only screen and (max-width: 37.5em) {
       .about__hobby-pic {
-        width: 50%; } }
+        width: 60%; } }
   .about__text {
     display: block;
     margin: auto;
@@ -317,8 +325,8 @@ body {
   .projects__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-    grid-gap: 1.5rem;
-    padding: 0.5rem;
+    grid-gap: 3rem;
+    padding: 2rem;
     text-align: center;
     font-size: 3rem;
     justify-content: center; }
